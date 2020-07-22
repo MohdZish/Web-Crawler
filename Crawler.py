@@ -6,9 +6,9 @@ from twilio.rest import Client
 
 
 login = {
-	"g_cn_cod": "114252",
-	"g_cn_mot_pas": "114252",
-	"CSRFToken": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTA3MDQyMjgsInNlc3Npb25JZCI6IkYyNzQwNTNGRDg",
+	"g_cn_cod": ###,
+	"g_cn_mot_pas": ###,
+	"CSRFToken": ###,
 }
 
 """
@@ -43,8 +43,8 @@ browser.open("https://dossier.parcoursup.fr/Candidat/authentification?")
 
 browser.select_form('form[name="accesdossier"]')
 
-browser["g_cn_cod"] = "114252"
-browser["g_cn_mot_pas"] = "Saheen_Salim123"
+browser["g_cn_cod"] = "###"
+browser["g_cn_mot_pas"] = "###"
 
 browser.submit_selected()
 
@@ -76,20 +76,20 @@ for child, child2 in zip(name, placement):
 
 message = client.messages.create(
 		body= "Saheen's position today in Parcoursup: \n\n" + finaltext,
-		from_='whatsapp:+14155238886',
-		to='whatsapp:+33699822496'
+		from_='whatsapp:+###',
+		to='whatsapp:+###'
 	)
 
 message = client.messages.create(
 		body= "Saheen's position today in Parcoursup: \n\n" + finaltext,
-		from_='whatsapp:+14155238886',
-		to='whatsapp:+33699822496'
+		from_='whatsapp:+###',
+		to='whatsapp:+###'
 	)
 
 message = client.messages.create(
 		body= "Saheen's position today in Parcoursup: \n\n" + finaltext,
-		from_='whatsapp:+14155238886',
-		to='whatsapp:+33769433312'
+		from_='whatsapp:+###',
+		to='whatsapp:+####'
 	)
 
 print(message.sid)
