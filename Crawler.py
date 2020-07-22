@@ -56,8 +56,8 @@ placement = list(browser.get_current_page().find_all('div', id='rang_cddt'))[:10
 name = list(browser.get_current_page().find_all('tr', class_='voeu'))[1:100]
 
 #for whatsapp sms V
-account_sid = 'ACb63a645a612e1acf1ef151219c25f513'
-auth_token = 'aa38aacf43206f1d84bde1424e14af99'
+account_sid = '###'
+auth_token = '###'
 client = Client(account_sid, auth_token)
 
 finaltext = ""
